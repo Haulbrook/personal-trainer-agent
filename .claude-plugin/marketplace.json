@@ -1,0 +1,109 @@
+{
+  "name": "personal-trainer-agent-cskill",
+  "version": "1.0.0",
+  "type": "skill",
+  "description": "An intelligent personal trainer agent that creates customized workout plans, tracks fitness progress, provides exercise guidance, and adapts training programs based on user goals and performance",
+  "author": "Haulbrook",
+  "keywords": [
+    "fitness",
+    "workout",
+    "training",
+    "exercise",
+    "personal trainer",
+    "gym",
+    "health",
+    "strength",
+    "cardio",
+    "nutrition",
+    "progress tracking",
+    "workout plan"
+  ],
+  "activation": {
+    "keywords": [
+      "create workout plan",
+      "design training program",
+      "personal trainer",
+      "fitness plan",
+      "exercise routine",
+      "gym workout",
+      "strength training",
+      "cardio program",
+      "track my fitness",
+      "workout recommendation",
+      "help me get fit",
+      "build muscle",
+      "lose weight workout"
+    ],
+    "patterns": [
+      "(?i)(create|design|make|build)\\s+(a\\s+)?(workout|training|exercise|fitness)\\s+(plan|program|routine)",
+      "(?i)(personal|fitness)\\s+trainer",
+      "(?i)(track|log|record)\\s+(my\\s+)?(workout|exercise|fitness|progress)",
+      "(?i)(recommend|suggest)\\s+(a\\s+)?(workout|exercise|training)",
+      "(?i)help\\s+(me\\s+)?(get\\s+fit|lose\\s+weight|build\\s+muscle|gain\\s+strength)"
+    ]
+  },
+  "capabilities": [
+    "workout-plan-generation",
+    "exercise-recommendation",
+    "progress-tracking",
+    "fitness-assessment",
+    "nutrition-guidance",
+    "rest-day-planning",
+    "workout-adaptation",
+    "goal-setting",
+    "performance-analytics"
+  ],
+  "supported_goals": [
+    "muscle-building",
+    "weight-loss",
+    "strength-gain",
+    "endurance",
+    "flexibility",
+    "general-fitness",
+    "sport-specific",
+    "rehabilitation"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "pip": [
+      "anthropic>=0.18.0",
+      "pandas>=2.0.0",
+      "numpy>=1.24.0",
+      "matplotlib>=3.7.0",
+      "pyyaml>=6.0"
+    ]
+  },
+  "features": [
+    "personalized-workout-plans",
+    "adaptive-programming",
+    "progress-visualization",
+    "exercise-library",
+    "rest-recovery-tracking"
+  ],
+  "usage": {
+    "example": "Create a 4-week strength training program for a beginner",
+    "input_types": [
+      "fitness_goals",
+      "experience_level",
+      "available_equipment",
+      "time_constraints",
+      "health_limitations"
+    ],
+    "output_types": [
+      "workout_plan",
+      "exercise_instructions",
+      "progress_report",
+      "recommendations"
+    ]
+  },
+  "metadata": {
+    "category": "health-fitness",
+    "subcategory": "personal-training",
+    "complexity": "medium",
+    "estimated_lines": 2000,
+    "created_by": "agent-skill-creator",
+    "architecture": "simple-skill",
+    "agentdb_enabled": true,
+    "learning_enabled": true
+  }
+}
